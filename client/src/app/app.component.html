@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <p>Show</p>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar fxLayoutAlign="space-between center">
+      <button mat-icon-button>
+        <mat-icon style="color: white">menu</mat-icon>
+      </button>
+      <div style="color: white">News Brasil</div>
+      <button  mat-icon-button>
+        <mat-icon style="color: white" (click)="irParaFirebase()">cloud_upload</mat-icon>
+      </button>
+      <!--<p (click)="sidenav.toggle()">click me</p>-->
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

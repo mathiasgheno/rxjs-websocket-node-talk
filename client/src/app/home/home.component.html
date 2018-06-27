@@ -1,0 +1,55 @@
+<div style="text-align:center">
+
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <mat-form-field style="margin: 10px;">
+      <input matInput placeholder="autor" [(ngModel)]="autor">
+    </mat-form-field>
+
+    <!--<mat-form-field style="margin: 10px;">-->
+      <!--<input matInput placeholder="Tag" [(ngModel)]="tag" type="number">-->
+    <!--</mat-form-field>-->
+
+    <mat-form-field style="margin: 10px;">
+      <input matInput placeholder="likes" [(ngModel)]="likes" type="number">
+    </mat-form-field>
+
+    <button mat-button (click)="buscar()">
+      <mat-icon>search</mat-icon>
+      Buscar
+    </button>
+
+  </div>
+
+
+  <div style="display: flex; justify-content: center;">
+    <mat-list>
+      <mat-list-item  *ngFor="let post of posts">
+        <div style="width: 100%" fxLayout="row" fxLayoutAlign="space-between center">
+          <div style="color: white">{{post.titulo}}</div>
+          <div fxLayout="row" fxLayoutAlign="space-around center">
+            <div>
+              <button mat-icon-button>
+                <mat-icon style="color: white" (click)="mostrarID(post._id)">file_copy</mat-icon>
+              </button>
+              <button mat-icon-button>
+                <mat-icon style="color: white" (click)="likePlus(post._id)">thumb_up</mat-icon>
+              </button>
+            </div>
+            <div style="color: white; font-weight: bold">{{post.likes}}</div>
+          </div>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </div>
+  <!--<div fxLayout="column" fxLayoutAlign="space-around center">-->
+  <!--<button mat-button style="margin-top: 25px;" (click)="requisicaoHTTPComQuery()">-->
+    <!--<mat-icon>refresh</mat-icon>-->
+    <!--Forçar Atualização-->
+  <!--</button>-->
+  <!--<button mat-button style="margin-top: 25px;" (click)="requisicaoHTTPComQuery()">-->
+    <!--<mat-icon>refresh</mat-icon>-->
+    <!--Com Querys-->
+  <!--</button>-->
+  <!--</div>-->
+  <div style="margin-top: 25px;"><b>ID Socket:</b>  {{ ID_SOCKET}}</div>
+</div>

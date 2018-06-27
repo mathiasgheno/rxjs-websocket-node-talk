@@ -1,0 +1,35 @@
+
+
+<div style="text-align:center">
+
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <mat-form-field style="margin: 10px;">
+      <input matInput placeholder="autor" [(ngModel)]="autor">
+    </mat-form-field>
+
+    <mat-form-field style="margin: 10px;">
+      <input matInput placeholder="likes" [(ngModel)]="likes" type="number">
+    </mat-form-field>
+
+    <button mat-button (click)="buscar()">
+      <mat-icon>search</mat-icon>
+      Buscar
+    </button>
+
+  </div>
+
+
+  <div style="display: flex; justify-content: center;">
+    <mat-list>
+      <mat-list-item  *ngFor="let post of items | async">
+        <div style="width: 100%" fxLayout="row" fxLayoutAlign="space-between center">
+          <div style="color: white">{{post.titulo}}</div>
+          <div fxLayout="row" fxLayoutAlign="space-around center">
+            </div>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </div>
+
+</div>
+

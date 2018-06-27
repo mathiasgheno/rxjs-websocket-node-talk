@@ -1,0 +1,10 @@
+
+mat-toolbar {
+  background-color: forestgreen;
+}
+
+mat-sidenav-container, mat-sidenav-content {
+  height: 100%;
+}
+
+
