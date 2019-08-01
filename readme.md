@@ -2,12 +2,8 @@
 
 ## Sobre ##
 
-Esse repositório contêm o código e a apresentação que foi apresentado no meetup Node.JS POA, em 21 de Junho de 2018;
+Esse repositório contêm o código e a apresentação da talk "Node.js, WebSocket e Rxjs: Simulando o Comportamento do Firebase" apresentado no 11º Meetup de Node.JS POA, em 21 de Junho de 2018;
 
-
-## Apresentação ##
-
-Meu nome é Mathias Gheno Azzolini, sou desenvolvedor fullstack na empresa DBServer, formado em Análise e Desenvolvimento de Sistema pelo IFRS e militante LGBT. Acredito que a tecnologia é peça fundamental para a criação de um mundo mais inclusivo e igualitário, sendo assim, apenas tecnologia pela tecnologia não é o suficiente. Acredito que a comunidade JavaScript é formada por pessoas que querem, além de tudo, criar coisas e é por esse motivo que sou um grande entusiasta de todo o ecossistema JavaScript.
 
 ## Dependências ##
 
